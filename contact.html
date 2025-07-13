@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shree Malatesh English Medium School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.jpeg" alt="School Logo" class="logo-image">
+                    <span class="logo-text">SHREE MALATESH ENGLISH MEDIUM SCHOOL</span>
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="academics.html" class="nav-link">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="facilities.html" class="nav-link">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="downloads.html" class="nav-link">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any queries or information</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We're here to help! Contact us for any information about admissions, academics, or general inquiries.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Address</h3>
+                                    <p>Shree Malatesh English Medium School<br>
+                                    Gourapur, TQ DI: Haveri 581110<br>
+                                    Karnataka, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Phone Numbers</h3>
+                                    <p><strong>General Inquiries:</strong></p>
+                                    <p>8431857941</p>
+                                    <p>8217838398</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Admission Queries</h3>
+                                    <p><strong>Admission Officers:</strong></p>
+                                    <p>9739816399</p>
+                                    <p>9986403845</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>malateshschool@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Office Hours</h3>
+                                    <p><strong>School Hours:</strong> 9:30 AM - 4:00 PM</p>
+                                    <p><strong>Office Hours:</strong> 9:00 AM - 5:00 PM</p>
+                                    <p><strong>Days:</strong> Monday to Saturday</p>
+                                    <p><strong>Closed:</strong> Sundays and Holidays</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="admission">Admission Inquiry</option>
+                                    <option value="academic">Academic Information</option>
+                                    <option value="facilities">Facilities Inquiry</option>
+                                    <option value="transport">Transportation</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                        <div id="formSuccess" class="success-message" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            Thank you for your message! We will get back to you soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2 class="findUsonMap">Find Us on Map</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.123456789!2d75.123456!3d14.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHaveri%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1234567890123" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <p><strong>Address:</strong> Shree Malatesh English Medium School, Gourapur, TQ DI: Haveri 581110, Karnataka</p>
+                    <p><strong>Directions:</strong> The school is easily accessible by road and public transportation from Haveri town.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2>Ready to Join Our School Family?</h2>
+                <p>Take the first step towards your child's bright future. Contact us today!</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-primary">Apply for Admission</a>
+                    <!-- <a href="downloads.html" class="btn btn-secondary">Download Forms</a> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Malatesh English Medium School</h3>
+                    <p>Committed to excellence in education and character development.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Gourapur, TQ DI: Haveri 581110</p>
+                    <p>Phone: 8431857941, 8217838398</p>
+                    <p>Email: malateshschool@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shree Malatesh English Medium School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

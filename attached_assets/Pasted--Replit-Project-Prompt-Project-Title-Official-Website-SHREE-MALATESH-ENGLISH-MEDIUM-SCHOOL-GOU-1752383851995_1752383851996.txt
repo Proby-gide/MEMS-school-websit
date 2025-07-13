@@ -1,0 +1,159 @@
+🧾 Replit Project Prompt
+Project Title:
+Official Website – SHREE MALATESH ENGLISH MEDIUM SCHOOL, GOURAPUR, TQ DI : HAVERI 581110
+
+Tech Stack:
+
+HTML – Page structure
+
+CSS – Styling, animations, and transitions
+
+JavaScript – Interactivity
+
+✅ Website Requirements
+Create a multi-page educational website using only HTML, CSS, and JavaScript. Content should strictly follow the details provided in the Word document. Include engaging animations and transitions for a modern feel, but keep the design clean and readable.
+
+📄 Pages to Build (Based on Your Content)
+Home Page (index.html)
+School logo
+
+Full school name
+
+Welcome section (with transitions)
+
+School timings: 9:30 AM to 4:00 PM
+
+Contact info summary
+
+Navigation bar linking all pages
+
+About Us (about.html)
+School history
+
+Vision & Mission statements
+
+Founder’s message (formatted with line spacing)
+
+Principal’s message (with emphasis on key values)
+
+Academics (academics.html)
+Curriculum followed (Karnataka State Board, moving to CBSE)
+
+List of subjects
+
+Class range: LKG to 10th Std
+
+Exam types and schedule
+
+Monthly exam structure
+
+Admissions (admissions.html)
+Admission steps (entrance test, interview, verification)
+
+Documents required
+
+Contact persons for admissions
+
+(Optional: Add link to a Google Form if available)
+
+Facilities (facilities.html)
+Number of classrooms
+
+Composite science/computer lab (30+ computers)
+
+Smart classroom
+
+Playground (kabaddi, kho-kho, volleyball)
+
+Library (1200+ books)
+
+Transportation details
+
+Gallery (gallery.html)
+School campus and event photos (use placeholder images for now)
+
+CSS hover effects or image slider
+
+Lightbox view (optional)
+
+News & Events (news.html)
+Upcoming events
+
+Latest notices
+
+School holidays
+
+Downloads (downloads.html)
+Admission form
+
+Holiday list
+
+Timetable
+
+Circulars
+
+Syllabus (PDF placeholders)
+
+Contact Us (contact.html)
+Address: SHREE MALATESH ENGLISH MEDIUM SCHOOL, GOURAPUR, TQ DI: HAVERI 581110
+
+Contact numbers: 8431857941, 8217838398
+
+Admission queries: 9739816399, 9986403845
+
+Email: malateshschool@gmail.com
+
+Google Maps embed (optional)
+
+Simple contact form with validation using JS
+
+🎨 Design & Features
+Consistent color scheme (blue, white, gray)
+
+Animated navbar with smooth hover transitions
+
+Section scroll animations (using @keyframes)
+
+Button animations and card hover effects
+
+Mobile responsive design using media queries
+
+JS-driven features like image sliders, lightboxes, form validation
+
+📁 Suggested Folder Structure
+bash
+Copy
+Edit
+/malatesh-school-website
+│
+├── index.html
+├── about.html
+├── academics.html
+├── admissions.html
+├── facilities.html
+├── gallery.html
+├── news.html
+├── downloads.html
+├── contact.html
+│
+├── /css
+│   └── style.css
+│
+├── /js
+│   └── script.js
+│
+├── /images
+│   └── logo.png, gallery1.jpg, etc.
+│
+├── /downloads
+│   └── syllabus.pdf, holiday-list.pdf, etc.
+📌 Replit Setup Steps
+Go to Replit and create a new HTML/CSS/JS project.
+
+Create the folder structure as shown above.
+
+Start with index.html and include a linked CSS file and JS file.
+
+Use internal routing (with anchor tags and separate HTML files) for navigation.
+
+Use placeholder images/files where actual media is not yet uploaded.

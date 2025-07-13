@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
+    <title>Gallery - Shree Malatesh English Medium School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/logo.jpeg" alt="School Logo" class="logo-image">
+                    <span class="logo-text">SHREE MALATESH ENGLISH MEDIUM SCHOOL</span>
+                </div>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="academics.html" class="nav-link">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="facilities.html" class="nav-link">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="downloads.html" class="nav-link">Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p>Explore our campus and school activities through photos</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="campus">Campus</button>
+                    <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="activities">Activities</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="container">
+                <div class="gallery-container">
+                    <!-- Campus Images -->
+                    <div class="gallery-item" data-category="campus">
+                        <div class="gallery-image">
+                            <div class="placeholder-image campus-placeholder">
+                                <i class="fas fa-school"></i>
+                                <p>School Building</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>School Building</h3>
+                                <p>Main school building with modern architecture</p>
+                                <button class="view-btn" onclick="openLightbox('school-building')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="campus">
+                        <div class="gallery-image">
+                            <div class="placeholder-image campus-placeholder">
+                                <i class="fas fa-building"></i>
+                                <p>Campus Entrance</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Campus Entrance</h3>
+                                <p>Welcoming entrance to our school</p>
+                                <button class="view-btn" onclick="openLightbox('campus-entrance')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="campus">
+                        <div class="gallery-image">
+                            <div class="placeholder-image campus-placeholder">
+                                <i class="fas fa-tree"></i>
+                                <p>School Garden</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>School Garden</h3>
+                                <p>Beautiful garden area for students</p>
+                                <button class="view-btn" onclick="openLightbox('school-garden')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Classroom Images -->
+                    <div class="gallery-item" data-category="classrooms">
+                        <div class="gallery-image">
+                            <div class="placeholder-image classroom-placeholder">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <p>Primary Classroom</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Primary Classroom</h3>
+                                <p>Well-equipped primary classroom</p>
+                                <button class="view-btn" onclick="openLightbox('primary-classroom')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="classrooms">
+                        <div class="gallery-image">
+                            <div class="placeholder-image classroom-placeholder">
+                                <i class="fas fa-desktop"></i>
+                                <p>Smart Classroom</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Smart Classroom</h3>
+                                <p>Interactive smart classroom with digital boards</p>
+                                <button class="view-btn" onclick="openLightbox('smart-classroom')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="classrooms">
+                        <div class="gallery-image">
+                            <div class="placeholder-image classroom-placeholder">
+                                <i class="fas fa-microscope"></i>
+                                <p>Science Laboratory</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Science Laboratory</h3>
+                                <p>Well-equipped science lab for experiments</p>
+                                <button class="view-btn" onclick="openLightbox('science-lab')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event Images -->
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <div class="placeholder-image event-placeholder">
+                                <i class="fas fa-calendar-alt"></i>
+                                <p>Annual Day Celebration</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Annual Day Celebration</h3>
+                                <p>Students performing during annual day</p>
+                                <button class="view-btn" onclick="openLightbox('annual-day')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <div class="placeholder-image event-placeholder">
+                                <i class="fas fa-flag"></i>
+                                <p>Independence Day</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Independence Day</h3>
+                                <p>Independence Day celebration at school</p>
+                                <button class="view-btn" onclick="openLightbox('independence-day')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <div class="placeholder-image event-placeholder">
+                                <i class="fas fa-medal"></i>
+                                <p>Prize Distribution</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Prize Distribution</h3>
+                                <p>Students receiving awards and prizes</p>
+                                <button class="view-btn" onclick="openLightbox('prize-distribution')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sports Images -->
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image">
+                            <div class="placeholder-image sports-placeholder">
+                                <i class="fas fa-running"></i>
+                                <p>Sports Day</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Sports Day</h3>
+                                <p>Annual sports day celebrations</p>
+                                <button class="view-btn" onclick="openLightbox('sports-day')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image">
+                            <div class="placeholder-image sports-placeholder">
+                                <i class="fas fa-volleyball-ball"></i>
+                                <p>Volleyball Match</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Volleyball Match</h3>
+                                <p>Students playing volleyball</p>
+                                <button class="view-btn" onclick="openLightbox('volleyball-match')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sports">
+                        <div class="gallery-image">
+                            <div class="placeholder-image sports-placeholder">
+                                <i class="fas fa-trophy"></i>
+                                <p>Sports Winners</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Sports Winners</h3>
+                                <p>Winners of various sports competitions</p>
+                                <button class="view-btn" onclick="openLightbox('sports-winners')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activities Images -->
+                    <div class="gallery-item" data-category="activities">
+                        <div class="gallery-image">
+                            <div class="placeholder-image activity-placeholder">
+                                <i class="fas fa-paint-brush"></i>
+                                <p>Art & Craft</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Art & Craft</h3>
+                                <p>Students engaged in art and craft activities</p>
+                                <button class="view-btn" onclick="openLightbox('art-craft')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="activities">
+                        <div class="gallery-image">
+                            <div class="placeholder-image activity-placeholder">
+                                <i class="fas fa-music"></i>
+                                <p>Music Class</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Music Class</h3>
+                                <p>Students learning music and instruments</p>
+                                <button class="view-btn" onclick="openLightbox('music-class')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="activities">
+                        <div class="gallery-image">
+                            <div class="placeholder-image activity-placeholder">
+                                <i class="fas fa-book"></i>
+                                <p>Library Session</p>
+                            </div>
+                            <div class="gallery-overlay">
+                                <h3>Library Session</h3>
+                                <p>Students reading in the library</p>
+                                <button class="view-btn" onclick="openLightbox('library-session')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                <div class="lightbox-image">
+                    <div id="lightbox-placeholder" class="lightbox-placeholder">
+                        <i class="fas fa-image"></i>
+                        <h3 id="lightbox-title">Image Title</h3>
+                        <p id="lightbox-description">Image description</p>
+                    </div>
+                </div>
+                <div class="lightbox-nav">
+                    <button class="nav-btn" onclick="previousImage()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn" onclick="nextImage()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Malatesh English Medium School</h3>
+                    <p>Committed to excellence in education and character development.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Gourapur, TQ DI: Haveri 581110</p>
+                    <p>Phone: 8431857941, 8217838398</p>
+                    <p>Email: malateshschool@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shree Malatesh English Medium School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
