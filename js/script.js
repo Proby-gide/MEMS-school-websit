@@ -462,67 +462,67 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Loading Animation for Page Transitions
-document.addEventListener('DOMContentLoaded', function () {
-    // Add loading overlay
-    const loadingOverlay = document.createElement('div');
-    loadingOverlay.id = 'loading-overlay';
-    loadingOverlay.innerHTML = `
-        <div class="loading-spinner">
-            <i class="fas fa-graduation-cap"></i>
-            <p>Loading...</p>
-        </div>
-    `;
-    loadingOverlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-    `;
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Add loading overlay
+//     const loadingOverlay = document.createElement('div');
+//     loadingOverlay.id = 'loading-overlay';
+//     loadingOverlay.innerHTML = `
+//         <div class="loading-spinner">
+//             <i class="fas fa-graduation-cap"></i>
+//             <p>Loading...</p>
+//         </div>
+//     `;
+//     loadingOverlay.style.cssText = `
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background: rgba(255, 255, 255, 0.9);
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         z-index: 9999;
+//         opacity: 0;
+//         visibility: hidden;
+//         transition: all 0.3s ease;
+//     `;
 
-    const spinnerStyle = document.createElement('style');
-    spinnerStyle.textContent = `
-        .loading-spinner {
-            text-align: center;
-            color: #3498db;
-        }
-        .loading-spinner i {
-            font-size: 3rem;
-            animation: spin 1s linear infinite;
-            margin-bottom: 1rem;
-        }
-        .loading-spinner p {
-            font-size: 1.2rem;
-            color: #2c3e50;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    `;
+//     const spinnerStyle = document.createElement('style');
+//     spinnerStyle.textContent = `
+//         .loading-spinner {
+//             text-align: center;
+//             color: #3498db;
+//         }
+//         .loading-spinner i {
+//             font-size: 3rem;
+//             animation: spin 1s linear infinite;
+//             margin-bottom: 1rem;
+//         }
+//         .loading-spinner p {
+//             font-size: 1.2rem;
+//             color: #2c3e50;
+//         }
+//         @keyframes spin {
+//             0% { transform: rotate(0deg); }
+//             100% { transform: rotate(360deg); }
+//         }
+//     `;
 
-    document.head.appendChild(spinnerStyle);
-    document.body.appendChild(loadingOverlay);
+//     document.head.appendChild(spinnerStyle);
+//     document.body.appendChild(loadingOverlay);
 
-    // Show loading on page navigation
-    const navLinks = document.querySelectorAll('a[href$=".html"]');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            if (this.hostname === window.location.hostname) {
-                loadingOverlay.style.opacity = '1';
-                loadingOverlay.style.visibility = 'visible';
-            }
-        });
-    });
-});
+//     // Show loading on page navigation
+//     const navLinks = document.querySelectorAll('a[href$=".html"]');
+//     navLinks.forEach(link => {
+//         link.addEventListener('click', function (e) {
+//             if (this.hostname === window.location.hostname) {
+//                 loadingOverlay.style.opacity = '1';
+//                 loadingOverlay.style.visibility = 'visible';
+//             }
+//         });
+//     });
+// });
 
 // Search Functionality (if needed)
 function initializeSearch() {
