@@ -532,3 +532,30 @@ window.addEventListener('pageshow', function () {
         overlay.remove(); // Optional but better to fully remove
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const heroSection = document.querySelector('.hero');
+
+    const images = [
+        'images/school_photo.jpeg',
+        'images/studentsInClassRoom.jpeg',
+        'images/studentsInClassRoom1.jpeg',
+        'images/WhatsApp Image 2025-07-12 at 10.18.47 AM.jpeg'
+    ];
+
+    let currentIndex = 0;
+
+    function changeHeroBackground() {
+        if (heroSection) {
+            heroSection.style.background = `url('${images[currentIndex]}') no-repeat center center / cover`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+    }
+
+    // Initial load
+    changeHeroBackground();
+
+    // Change every 5 seconds
+    setInterval(changeHeroBackground, 5000);
+});
