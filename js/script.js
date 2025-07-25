@@ -540,8 +540,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const images = [
         'images/school_photo.jpeg',
         'images/studentsInClassRoom.jpeg',
-        'images/sir1.jpeg',
-        'images/sir2.jpeg',
         'images/studentsInClassRoom1.jpeg',
         'images/WhatsApp Image 2025-07-12 at 10.18.47 AM.jpeg'
     ];
